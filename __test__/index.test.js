@@ -7,7 +7,7 @@ test('fetch content', async t => {
     repo: 'fetch-gh-content',
     filepath: '__test__/plaintext'
   })
-  t.is(content, `oh my fetch-gh-content`)
+  t.is(content.trimRight(), `oh my fetch-gh-content`)
 })
 
 test('is directory', async t => {
